@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
+import { motion } from "motion/react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,6 +35,10 @@ export default function Home() {
             width={180}
             height={38}
             priority
+          />
+          <motion.div
+            style={{ background: "red", height: "30px", width: "30px" }}
+            animate={{ x: 100 }}
           />
           <ol>
             <li>
